@@ -22,11 +22,11 @@ public class ProgramService {
         repo.save(program);
     }
      
-    public Program get(Integer id) {
-        return repo.findById(id).get();
+    public Program get(Integer programId) {
+        return repo.findById(programId).get();
     }
      
-    public void delete(Integer id) {
-        repo.deleteById(id);
+    public void delete(Integer programId) {
+        repo.deleteById(programId);
     }
 }

@@ -8,34 +8,34 @@ import javax.persistence.Id;
  
 @Entity
 public class Program {
-    private Integer id;
-    private String programname;
+    private Integer programId;
+    private String programName;
  
     public Program() {
     }
  
-    public Program(Integer id, String programname) {
-        this.id = id;
-        this.programname = programname;
+    public Program(Integer programId, String programName) {
+        this.programId = programId;
+        this.programName = programName;
     }
- 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer getId() {
-        return id;
-    }
-
-	public void setId(Integer id) {
-		this.id = id;
+	public Integer getProgramId() {
+		return programId;
 	}
 
-	public String getProgramname() {
-		return programname;
+	public void setProgramId(Integer programId) {
+		this.programId = programId;
 	}
 
-	public void setProgramname(String programname) {
-		this.programname = programname;
+	public String getProgramName() {
+		return programName;
+	}
+
+	public void setProgramName(String programName) {
+		this.programName = programName;
 	}
  
+   
     
 }

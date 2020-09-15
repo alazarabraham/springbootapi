@@ -22,11 +22,11 @@ public class StudentService {
         repo.save(student);
     }
      
-    public Student get(Integer id) {
-        return repo.findById(id).get();
+    public Student get(Integer studentId) {
+        return repo.findById(studentId).get();
     }
      
-    public void delete(Integer id) {
-        repo.deleteById(id);
+    public void delete(Integer studentId) {
+        repo.deleteById(studentId);
     }
 }

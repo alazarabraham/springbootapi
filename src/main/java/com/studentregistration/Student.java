@@ -9,11 +9,11 @@ import javax.persistence.Id;
  
 @Entity
 public class Student {
-    private Integer id;
+    private Integer studentId;
     private String firstname;
     private String lastname;
     private String DOB;
-    private Integer programid;
+    private Integer programId;
 
 
     
@@ -21,38 +21,37 @@ public class Student {
     public Student() {
     }
  
-    public Student(Integer id, String firstname,String lastname,String DOB,Integer programid) {
-        this.id = id;
+    public Student(Integer studentId, String firstname,String lastname,String DOB,Integer programId) {
+        this.studentId = studentId;
         this.firstname = firstname;
         this.lastname = lastname;
         this.DOB = DOB;
-        this.programid = programid;
+        this.programId = programId;
 
     }
- 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Integer getId() {
-        return id;
-    }
-
-	public void setId(Integer id) {
-		this.id = id;
+	public Integer getStudentId() {
+		return studentId;
 	}
 
-	public String getFirstName() {
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
+	}
+
+	public String getFirstname() {
 		return firstname;
 	}
 
-	public void setFirstName(String firstname) {
+	public void setFirstname(String firstname) {
 		this.firstname = firstname;
 	}
 
-	public String getLastName() {
+	public String getLastname() {
 		return lastname;
 	}
 
-	public void setLastName(String lastname) {
+	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
 
@@ -60,17 +59,20 @@ public class Student {
 		return DOB;
 	}
 
-	public void setDOB(String DOB) {
-		this.DOB = DOB;
+	public void setDOB(String dOB) {
+		DOB = dOB;
 	}
 
-	public Integer getProgramid() {
-		return programid;
+	public Integer getProgramId() {
+		return programId;
 	}
 
-	public void setProgramid(Integer programid) {
-		this.programid = programid;
+	public void setProgramId(Integer programId) {
+		this.programId = programId;
 	}
+ 
+    
+    
 
 	
  
